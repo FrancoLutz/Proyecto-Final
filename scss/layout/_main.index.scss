@@ -1,0 +1,39 @@
+main {
+  width: 100%;
+}
+
+.h1grid {
+  width: auto;
+  height: auto;
+  color: white;
+  grid-column: 2/3;
+  grid-row: 3/5;
+  align-self: center;
+  text-align: center;
+  -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+  animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+}
+
+@-webkit-keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}
+
+@keyframes text-blur-out {
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01);
+  }
+
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%);
+  }
+}

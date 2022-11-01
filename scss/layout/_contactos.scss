@@ -1,0 +1,57 @@
+.box-contact {
+  grid-column: 2/2;
+  grid-row: 2/7;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+}
+
+input {
+  justify-items: center;
+  width: 100%;
+  height: 30px;
+}
+
+.horizontalbox {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.nombre-apellido {
+  width: 112%;
+  margin: 15px;
+  display: flex;
+  flex-direction: row;
+
+  input {
+    width: 42%;
+  }
+}
+
+.asunto {
+  margin: 15px;
+  width: 94%;
+}
+
+.mensaje {
+  margin: 15px;
+}
+
+.boxmensaje {
+  height: 200px;
+  width: 100%;
+}
+
+.boxenviar {
+  height: 20px;
+  width: 10vh;
+  margin: 12px;
+  cursor: pointer;
+}
