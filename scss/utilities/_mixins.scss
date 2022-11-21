@@ -1,0 +1,20 @@
+@mixin products-prop ($area, $column, $row) {
+    grid-area: $area;
+    grid-column: $column;
+    grid-row: $row;
+    justify-self: center;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+@mixin products-prop-tablet ($area, $column, $row) {
+    grid-area: $area;
+    grid-column: $column;
+    grid-row: $row;
+}
+
+@mixin products-prop-mobile ($area, $column, $row) {
+    grid-area: $area;
+    grid-column: $column;
+    grid-row: $row;
+}

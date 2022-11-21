@@ -4,7 +4,7 @@ header {
   grid-template-rows: 1fr;
   min-height: 80px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-  background: linear-gradient(rgb(235, 235, 235), rgb(170, 170, 170), rgba(150, 150, 150, 0.8));
+  background: $backgrpund-header;
   border: 1px solid black;
 }
 

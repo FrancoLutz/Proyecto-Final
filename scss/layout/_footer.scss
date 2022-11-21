@@ -9,16 +9,14 @@ footer {
   background-color: #6c757d;
   align-items: center;
   padding: 20px;
-  background: linear-gradient(rgb(120, 120, 120), rgb(100, 100, 100), rgba(50, 50, 50, 0.9));
+  background:$background-footer;
 }
 
 .americanblinds {
   display: flex;
-  flex-direction: row;
-}
-
-.redes {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
+  flex-direction: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  height: 5px;
 }

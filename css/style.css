@@ -1,759 +1,575 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/** ESTILOS GENERALES **/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
 
 h1 {
-    font-size: 80px;
-}
+  font-size: 80px; }
 
 h2 {
-    font-size: 55px;
-    justify-content: center;
-}
+  font-size: 55px;
+  justify-content: center; }
 
 h3 {
-    width: 100%;
-    font-size: 40px;
-    color: lightgrey;
-}
+  width: 100%;
+  font-size: 40px;
+  color: lightgrey; }
 
 h4 {
-    font-size: 20px;
-}
+  font-size: 20px; }
 
 .product-title {
-    color: rgb(230, 220, 173);
-    grid-column: 1/4;
-    grid-row: 1/2;
-    height: 150px;
-    text-align: center;
-    margin: 40px 0px;
-    -webkit-animation: tracking-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
-    animation: tracking-out-contract 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
-}
-
-@-webkit-keyframes tracking-out-contract {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-}
-
-@keyframes tracking-out-contract {
-    0% {
-        opacity: 1;
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        letter-spacing: -0.5em;
-        opacity: 0;
-    }
-}
-
-
-/** ESTILO IMG FONDO PAG**/
+  color: #e6dcad;
+  grid-column: 1/4;
+  grid-row: 2/3;
+  height: 150px;
+  text-align: center;
+  margin: 40px 0px;
+  -webkit-animation: tracking-out-contract 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+  animation: tracking-out-contract 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both; }
 
 .backgroundimage {
-    width: 100%;
-    height: calc(100vh - 30px);
-    background-image: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.3),
-            rgba(0, 0, 0, 0.3)), url(/assets/persianas-de-madera-para-la-casa.jpg);
-    background-size: cover;
-    background-position: center center;
-    overflow: scroll;
-}
-
-
-/** MAQUETACION GRID **/
+  width: 100%;
+  height: calc(100vh - 30px);
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(https://home-land.com.mx/img/img/madera/madera1.jpg);
+  background-size: cover;
+  background-position: center center;
+  overflow: scroll; }
 
 .container-grid {
-    width: 100%;
-    height: 85vh;
-    position: relative;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas:
-        "main main main"
-        "producto1 producto2 producto3"
-        "producto4 producto5 producto6"
-        "main main main"
-        "main main main"
-        "main main main"
-    ;
-}
+  width: 100%;
+  height: 85vh;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas: "main main main" "producto1 producto2 producto3" "producto4 producto5 producto6" "main main main" "main main main" "main main main"; }
 
+@-webkit-keyframes tracking-out-contract {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0; } }
 
-/** ESTILOS HEADER **/
+@keyframes tracking-out-contract {
+  0% {
+    opacity: 1; }
+  50% {
+    opacity: 1; }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0; } }
 
 header {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    min-height: 80px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(rgb(235, 235, 235), rgb(170, 170, 170), rgba(150, 150, 150, 0.8));
-    border: 1px solid black;
-}
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  min-height: 80px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(#ebebeb, #aaaaaa, rgba(150, 150, 150, 0.8));
+  border: 1px solid black; }
 
 .namepage {
-    display: flex;
-    align-items: center;
-    margin-left: 10px;
-}
-
-.namepage a {
+  display: flex;
+  align-items: center;
+  margin-left: 10px; }
+  .namepage a {
     text-decoration: 0;
-    color: black;
-}
-
-.namepage a p {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    font-size: 35px;
-    width: auto;
-    margin-left: 10px;
-}
+    color: black; }
+    .namepage a p {
+      grid-column: 1/2;
+      grid-row: 1/3;
+      font-size: 35px;
+      width: auto;
+      margin-left: 10px; }
 
 ul {
-    gap: 5px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
+  gap: 5px;
+  display: flex;
+  flex-direction: row;
+  list-style: none; }
 
 .navegador {
-    grid-column: 2/3;
-    grid-row: 1/3;
-    display: flex;
-    align-self: center;
-    justify-self: center;
-}
+  grid-column: 2/3;
+  grid-row: 1/3;
+  display: flex;
+  align-self: center;
+  justify-self: center; }
 
 nav ul li a {
-    text-decoration: 0;
-    font-size: 20px;
-    color: black;
-}
-
-nav ul li a:hover {
-    color: rgba(0, 0, 0, 0.418);
-}
+  text-decoration: 0;
+  font-size: 20px;
+  color: black; }
+  nav ul li a:hover {
+    color: rgba(0, 0, 0, 0.418); }
 
 .bottons {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    display: flex;
-    flex-direction: row-reverse;
-    margin-right: 20px;
-    align-items: center;
-
-
-}
+  grid-column: 3/4;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 20px;
+  align-items: center; }
 
 button {
-    display: flex;
-    align-self: center;
-    justify-self: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;
-    color: rgb(255, 255, 255);
-    background-color: black;
-    border-color: rgb(160, 160, 160);
-    cursor: pointer;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-}
-
-button:hover {
-    background-color: rgb(30, 30, 30);
-}
-
-
-/** ESTILOS MAIN INDEX.HTML **/
+  display: flex;
+  align-self: center;
+  justify-self: center;
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+  color: white;
+  background-color: black;
+  border-color: #a0a0a0;
+  cursor: pointer;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); }
+  button:hover {
+    background-color: #1e1e1e; }
 
 main {
-    width: 100%;
-}
+  width: 100%; }
 
 .h1grid {
-    width: auto;
-    height: auto;
-    color: white;
-    grid-column: 2/3;
-    grid-row: 3/5;
-    align-self: center;
-    text-align: center;
-    -webkit-animation: text-blur-out 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
-    animation: text-blur-out 2s cubic-bezier(0.550, 0.085, 0.680, 0.530) reverse both;
-}
+  width: auto;
+  height: auto;
+  color: white;
+  grid-column: 2/3;
+  grid-row: 3/5;
+  align-self: center;
+  text-align: center;
+  -webkit-animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both;
+  animation: text-blur-out 2s cubic-bezier(0.55, 0.085, 0.68, 0.53) reverse both; }
 
 @-webkit-keyframes text-blur-out {
-    0% {
-        -webkit-filter: blur(0.01);
-        filter: blur(0.01);
-    }
-
-    100% {
-        -webkit-filter: blur(12px) opacity(0%);
-        filter: blur(12px) opacity(0%);
-    }
-}
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
 
 @keyframes text-blur-out {
-    0% {
-        -webkit-filter: blur(0.01);
-        filter: blur(0.01);
-    }
-
-    100% {
-        -webkit-filter: blur(12px) opacity(0%);
-        filter: blur(12px) opacity(0%);
-    }
-}
-
-
-/** ESTILOS PRODUCTOS **/
-
-
+  0% {
+    -webkit-filter: blur(0.01);
+    filter: blur(0.01); }
+  100% {
+    -webkit-filter: blur(12px) opacity(0%);
+    filter: blur(12px) opacity(0%); } }
 
 .imgs {
-    padding: 20px;
-    justify-self: center;
-    width: 350px;
-    height: 350px;
-}
+  padding: 20px;
+  justify-self: center;
+  width: 350px;
+  height: 350px; }
 
 .producto1 {
-    grid-area: producto1;
-    grid-column: 1/2;
-    grid-row: 2/2;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto1;
+  grid-column: 1;
+  grid-row: 2;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .producto2 {
-    grid-area: producto2;
-    grid-column: 2/3;
-    grid-row: 2/3;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto2;
+  grid-column: 2;
+  grid-row: 2;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .producto3 {
-    grid-area: producto3;
-    grid-column: 3/4;
-    grid-row: 2/5;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto3;
+  grid-column: 3;
+  grid-row: 2;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .producto4 {
-    grid-area: producto4;
-    grid-column: 1/2;
-    grid-row: 4/5;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto4;
+  grid-column: 1;
+  grid-row: 4;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .producto5 {
-    grid-area: producto5;
-    grid-column: 2/3;
-    grid-row: 4/5;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto5;
+  grid-column: 2;
+  grid-row: 4;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .producto6 {
-    grid-area: producto6;
-    grid-column: 3/4;
-    grid-row: 4/5;
-    justify-self: center;
-    align-items: center;
-    padding: 20px 10px;
-}
+  grid-area: producto6;
+  grid-column: 3;
+  grid-row: 4;
+  justify-self: center;
+  align-items: center;
+  padding: 20px 10px; }
 
 .target {
-    border: 3px solid rgba(255, 255, 255, 0.13);
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 20px;
-    width: 350px;
-    height: 460px;
-    cursor: pointer;
-    -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation: slide-fwd-center 0.45s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-}
-
-.target:hover {
+  border: 3px solid rgba(255, 255, 255, 0.13);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 350px;
+  height: 460px;
+  cursor: pointer;
+  -webkit-animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation: slide-fwd-center 0.45s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; }
+  .target:hover {
     background: rgba(255, 255, 255, 0.2);
     -webkit-animation: scale-up-center 0.4s ease-out;
-    animation: scale-up-center 0.4s ease-out;
-}
-
-@-webkit-keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-    }
-
-    100% {
-        -webkit-transform: scale(1.);
-        transform: scale(1);
-    }
-}
-
-@keyframes scale-up-center {
-    0% {
-        -webkit-transform: scale(0.98);
-        transform: scale(0.98);
-    }
-
-    100% {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-}
-
-.target h4 {
+    animation: scale-up-center 0.4s ease-out; }
+  .target h4 {
     margin: 15px;
     padding: 10px;
     color: white;
     background-color: rgba(0, 0, 0, 0.1);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5); }
 
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.98);
+    transform: scale(0.98); }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1); } }
 
-/** ESTILOS NOSOTROS **/
-
+.product-title {
+  color: #e6dcad;
+  grid-column: 1/4;
+  grid-row: 1/2;
+  height: 50px; }
 
 .paragraph {
-    grid-column: 1/4;
-    grid-row: 2/7;
-    font-size: 20px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-}
+  grid-column: 1/4;
+  grid-row: 2/3;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
+  justify-self: center; }
+  .paragraph p {
+    color: white; }
 
-.paragraph p {
-    color: white
-}
+.subtitle1 {
+  grid-column: 1/4;
+  grid-row: 3/4;
+  margin-left: 80px;
+  justify-self: start;
+  align-self: center; }
 
+.paragraph1 {
+  grid-column: 1/4;
+  grid-row: 4/5;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
+  justify-self: center; }
+  .paragraph1 p {
+    color: white; }
 
-/** ESTILOS CONTACTOS **/
+.subtitle2 {
+  grid-column: 1/4;
+  grid-row: 5/6;
+  margin-left: 80px;
+  justify-self: start;
+  align-self: center; }
+
+.paragraph2 {
+  grid-column: 1/4;
+  grid-row: 6/7;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
+  justify-self: center; }
+  .paragraph2 p {
+    color: white; }
+
+.subtitle3 {
+  grid-column: 1/4;
+  grid-row: 7/8;
+  margin-left: 80px;
+  justify-self: start;
+  align-self: center; }
+
+.paragraph3 {
+  grid-column: 1/4;
+  grid-row: 8/9;
+  font-size: 20px;
+  margin: 10px;
+  padding: 10px;
+  width: 95%;
+  justify-self: center; }
+  .paragraph3 p {
+    color: white; }
 
 .box-contact {
-    grid-column: 2/2;
-    grid-row: 2/7;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    align-items: center;
-    border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.5),
-            rgba(0, 0, 0, 0.3))
-}
+  grid-column: 2/2;
+  grid-row: 2/7;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  text-align: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)); }
 
 input {
-    justify-items: center;
-    width: 100%;
-    height: 30px;
-}
+  justify-items: center;
+  width: 100%;
+  height: 30px; }
 
 .horizontalbox {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
+  display: flex;
+  flex-direction: column;
+  width: 100%; }
 
 .nombre-apellido {
-    width: 112%;
-    margin: 15px;
-    display: flex;
-    flex-direction: row;
-}
-
-.nombre-apellido input {
-    width: 42%;
-}
+  width: 112%;
+  margin: 15px;
+  display: flex;
+  flex-direction: row; }
+  .nombre-apellido input {
+    width: 42%; }
 
 .asunto {
-    margin: 15px;
-    width: 94%;
-}
+  margin: 15px;
+  width: 94%; }
 
 .mensaje {
-    margin: 15px;
-}
+  margin: 15px; }
 
 .boxmensaje {
-    height: 200px;
-    width: 100%;
-
-}
+  height: 200px;
+  width: 100%; }
 
 .boxenviar {
-    height: 20px;
-    width: 10vh;
-    margin: 12px;
-    cursor: pointer;
-}
-
-
-/** ESTILOS AYUDA **/
+  height: 20px;
+  width: 10vh;
+  margin: 12px;
+  cursor: pointer; }
 
 form {
-    width: 100%;
-    text-align: center;
-    align-items: center;
-}
+  width: 100%;
+  text-align: center;
+  align-items: center; }
 
 .subtitulo1 {
-    grid-column: 1/4;
-    grid-row: 1/2;
-    width: 100%;
-    text-align: center;
-    align-self: flex-end;
-
-}
+  grid-column: 1/4;
+  grid-row: 2/3;
+  width: 100%;
+  text-align: center;
+  align-self: flex-end; }
 
 .box-preguntas {
-    grid-column: 1/4;
-    grid-row: 2/4;
-    width: 100%;
-    align-self: center;
-
-}
+  grid-column: 1/4;
+  grid-row: 3/4;
+  width: 100%;
+  align-self: center; }
 
 .fondoopacity {
-    width: 100%;
-    height: 55px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-    background: linear-gradient(0deg,
-            rgba(0, 0, 0, 0.2),
-            rgba(0, 0, 0, 0.2));
-}
+  width: 100%;
+  height: 55px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)); }
 
 .box-preguntas input {
-    width: 85%;
-}
+  width: 85%; }
 
 .subtitulo2 {
-    grid-column: 1/4;
-    grid-row: 4/5;
-    align-items: center;
-    text-align: center;
-
-}
+  grid-column: 1/4;
+  grid-row: 4/5;
+  align-items: center;
+  text-align: center; }
 
 .consultas {
-    grid-column: 1/4;
-    grid-row: 5/7;
-    align-self: center;
-    width: 100%;
-    margin: 60px 0px;
-
-}
+  grid-column: 1/4;
+  grid-row: 5/6;
+  align-self: center;
+  width: 100%;
+  margin: 60px 0px; }
 
 .motivo input {
-    width: 85%;
-
-}
+  width: 85%; }
 
 .mensajeayuda input {
-    width: 85%;
-    height: 200px;
-}
+  width: 85%;
+  height: 200px; }
 
 .enviar {
-    width: 100%;
-    justify-content: center;
-}
-
-.enviar input {
+  width: 100%;
+  justify-content: center; }
+  .enviar input {
     height: 20px;
     width: 100px;
     margin: 12px;
     cursor: pointer;
-    justify-content: center;
-}
+    justify-content: center; }
 
 .inputayuda {
-    font-weight: bold;
-    width: 100px;
-    align-self: center;
-    height: 45px;
-    margin: 3px;
-}
-
-
-/** ESTILOS FOOTER **/
-
-footer {
-    display: flex;
-    flex-direction: center;
-    height: 50px;
-    bottom: 0;
-    width: 100%;
-    position: absolute;
-    justify-content: space-between;
-    background-color: #6c757d;
-    align-items: center;
-    padding: 20px;
-    background: linear-gradient(rgb(120, 120, 120), rgb(100, 100, 100), rgba(50, 50, 50, 0.90));
-}
-
-.americanblinds {
-    display: flex;
-    flex-direction: row;
-}
-
-.redes {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-}
-
-
+  font-weight: bold;
+  width: 100px;
+  align-self: center;
+  height: 45px;
+  margin: 3px; }
 
 @media (max-width: 768px) {
-
-    /** MAQUETACION GRID **/
-
-    .container-grid {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-            "main main"
-            "producto1 producto2"
-            "producto3 producto4"
-            "producto5 producto6"
-            "main main"
-            "main main"
-        ;
-    }
-
-
-    /** ESTILOS HEADER **/
-
-    header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
-        background: linear-gradient(rgb(235, 235, 235), rgb(170, 170, 170), rgba(150, 150, 150, 0.8));
-        border: 0.5px solid black;
-    }
-
-    .menudesplegable {
-        display: flex;
-    }
-
-    .menudesktop {
-        display: none;
-    }
-
-    .namepage a p {
-        font-size: 35px;
-        margin: 5px 0px;
-    }
-
-    .formsearch input {
-        border-radius: 6px;
-        width: 200px;
-        margin: 5px 0px;
-        text-align: center;
-    }
-
-    ul {
-        text-align: center;
-        margin: 5px 0px;
-        gap: 8px;
-    }
-
-    nav ul li a {
-        font-size: 20px;
-    }
-
-    button {
-        margin: 3.5px;
-        padding: 5px px;
-        border-radius: 3px;
-    }
-
-    .bottons {
-        flex-direction: row;
-        align-items: center;
-        text-align: center;
-        margin: 10px 10px;
-    }
-
-
-    /** ESTILOS MAIN-INDEX **/
-
-    .h1grid {
-        grid-column: 1/3;
-        grid-row: 2/4;
-    }
-
+  /** MAQUETACION GRID **/
+  .container-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: "main main" "producto1 producto2" "producto3 producto4" "producto5 producto6" "main main" "main main"; }
+  /** ESTILOS HEADER **/
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(#ebebeb, #aaaaaa, rgba(150, 150, 150, 0.8));
+    border: 0.5px solid black; }
+  .namepage a p {
+    font-size: 35px;
+    margin: 5px 0px; }
+  .formsearch input {
+    border-radius: 6px;
+    width: 200px;
+    margin: 5px 0px;
+    text-align: center; }
+  ul {
+    text-align: center;
+    margin: 5px 0px;
+    gap: 8px; }
+  nav ul li a {
+    font-size: 20px; }
+  button {
+    margin: 3.5px;
+    padding: 5px px;
+    border-radius: 3px; }
+  .bottons {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin: 10px 10px; }
+  /** ESTILOS MAIN-INDEX **/
+  .h1grid {
+    grid-column: 1/3;
+    grid-row: 2/5; }
     .h1grid h1 {
-        font-size: 60px;
-    }
-
-
-    /** ESTILOS PRODUCTOS **/
-
-    .producto1 {
-        grid-area: producto1;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
-
-
-    /** ESTILOS CONTACTO **/
-
-    .box-contact {
-        grid-column: 1/3;
-        grid-row: 2/7;
-    }
-
-}
+      font-size: 60px; }
+  /** ESTILOS PRODUCTOS **/
+  .producto1 {
+    grid-area: producto1;
+    grid-column: 1;
+    grid-row: 2; }
+  .producto2 {
+    grid-area: producto2;
+    grid-column: 2;
+    grid-row: 2; }
+  .producto3 {
+    grid-area: producto3;
+    grid-column: 1;
+    grid-row: 3; }
+  .producto4 {
+    grid-area: producto4;
+    grid-column: 2;
+    grid-row: 3; }
+  .producto5 {
+    grid-area: producto5;
+    grid-column: 1;
+    grid-row: 4; }
+  .producto6 {
+    grid-area: producto6;
+    grid-column: 2;
+    grid-row: 4; }
+  /** ESTILOS CONTACTO **/
+  .box-contact {
+    grid-column: 1/3;
+    grid-row: 2/7; } }
 
 @media (max-width: 576px) {
-
-
-    /** MAQUETACION GRID **/
-
-    .container-grid {
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(8, 1fr);
-        grid-template-areas:
-            "main"
-            "producto1"
-            "producto2"
-            "producto3"
-            "producto4"
-            "producto5"
-            "producto6"
-            "main"
-        ;
-    }
-
-    ul {
-        text-align: center;
-        margin: 5px 0px;
-        gap: 2px;
-    }
-
-
-    /** ESTILOS MAININDEX **/
-
-    .h1grid {
-        grid-column: 1/2;
-        grid-row: 3/5;
-    }
-
+  /** MAQUETACION GRID **/
+  .container-grid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-template-areas: "main" "producto1" "producto2" "producto3" "producto4" "producto5" "producto6" "main"; }
+  /** ESTILOS HEADER **/
+  .namepage a p {
+    font-size: 30px; }
+  .navegador .nav ul li a {
+    font-size: 18px; }
+  ul {
+    text-align: center;
+    margin: 5px 0px;
+    gap: 2px; }
+  /** ESTILOS MAININDEX **/
+  .h1grid {
+    grid-column: 1/2;
+    grid-row: 3/5; }
     .h1grid h1 {
-        font-size: 50px;
-    }
+      font-size: 45px; }
+  /** ESTILOS PRODUCTOS **/
+  .producto1 {
+    grid-area: producto1;
+    grid-column: 1;
+    grid-row: 2; }
+  .producto2 {
+    grid-area: producto2;
+    grid-column: 1;
+    grid-row: 3; }
+  .producto3 {
+    grid-area: producto3;
+    grid-column: 1;
+    grid-row: 4; }
+  .producto4 {
+    grid-area: producto4;
+    grid-column: 1;
+    grid-row: 5; }
+  .producto5 {
+    grid-area: producto5;
+    grid-column: 1;
+    grid-row: 6; }
+  .producto6 {
+    grid-area: producto6;
+    grid-column: 1;
+    grid-row: 7; } }
 
+footer {
+  display: flex;
+  flex-direction: center;
+  height: 50px;
+  bottom: 0;
+  width: 100%;
+  position: absolute;
+  justify-content: space-between;
+  background-color: #6c757d;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(#787878, #646464, rgba(50, 50, 50, 0.9)); }
 
-
-    /** ESTILOS PRODUCTOS **/
-
-    .producto1 {
-        grid-area: producto1;
-        grid-column: 1/2;
-        grid-row: 2/3;
-    }
-
-    .producto2 {
-        grid-area: producto2;
-        grid-column: 1/2;
-        grid-row: 3/4;
-    }
-
-    .producto3 {
-        grid-area: producto3;
-        grid-column: 1/2;
-        grid-row: 4/5;
-    }
-
-    .producto4 {
-        grid-area: producto4;
-        grid-column: 1/2;
-        grid-row: 5/6;
-    }
-
-    .producto5 {
-        grid-area: producto5;
-        grid-column: 1/2;
-        grid-row: 6/7;
-    }
-
-    .producto6 {
-        grid-area: producto6;
-        grid-column: 1/2;
-        grid-row: 7/8;
-    }
-
-}
+.americanblinds {
+  display: flex;
+  flex-direction: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 100%;
+  height: 5px; }
